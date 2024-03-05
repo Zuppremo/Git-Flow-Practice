@@ -345,6 +345,17 @@ border-bottom: 1px solid #ccc;
   align-items: center;
 }
 
+.customization_panel table{
+  border-radius: 20px;
+  background-color: rgb(0, 0, 129);
+  text-align: center;
+  color: white;
+}
+
+.customization_panel table tr, .customization_panel table td{
+  /*background-color: rgb(255, 0, 0);*/
+}
+
 .foto-hombre{
   width: 200px;
   height: 180px;
