@@ -120,8 +120,95 @@
                     
                 </div>
                 <div class="container-hombre"> <!--Cuadro azul con la foto del hombre-->
-                    <img class="man_photo" src="imagenes/Hombre.png">
+                    <div>
+                        <img class="man_photo" src="imagenes/Hombre.png">
+                    </div>
+                    <!--Creado un br para dividir la imagen del panel-->
+                    <br>
 
+                    <div class="customization_panel">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th><img src="imagenes/brush-icon.png" alt=""></th>
+                                    <th><img src="imagenes/link-icon.png" alt=""></th>
+                                    <th><img src="imagenes/image-icon.png" alt=""></th>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><hr></td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="3" id="rangeBar">
+                                        <label>WIDTH</label>
+                                        <input type="range" value="100" min="1" max="100" size="1px" oninput="this.nextElementSibling.value = this.value">
+                                        <output>100</output>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><input type="checkbox"><label>Set Max Image Width</label></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" id="recuadro"><input type="text" placeholder="400" ></td>
+                                </tr>
+                                <td colspan="3"><br></td>
+                                <tr>
+                                    <td colspan="3"><input type="checkbox"><label>Do Not Optimizate This Image</label></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><hr></td>
+                                </tr>
+                                <tr>
+                                    <td class="checkbox-container" style="width: 33.33%;">
+                                        <input type="checkbox" id="CheckboxImg1">
+                                        <label for="CheckboxImg1">
+                                          <img src="imagenes/image-left.png" alt="Botón">
+                                        </label>
+                                    </td>                                      
+                                    <td class="checkbox-container" style="width: 33.33%;">
+                                        <input type="checkbox" id="CheckboxImg2">
+                                        <label for="CheckboxImg2">
+                                          <img src="imagenes/image-center.png" alt="Botón">
+                                        </label>
+                                    </td>      
+                                    <td class="checkbox-container" style="width: 33.33%;">
+                                        <input type="checkbox" id="CheckboxImg3">
+                                        <label for="CheckboxImg3">
+                                          <img src="imagenes/image-right.png" alt="Botón">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3"><hr></td>
+                                </tr>
+                                <tr>
+                                    <td class="checkbox-container" style="width: 33.33%;" colspan="3">
+                                        <input type="checkbox" id="CheckboxText1">
+                                        <label for="CheckboxText1">
+                                          Square
+                                        </label>
+                                    </td> 
+                                </tr>
+                                <tr>
+                                    <td class="checkbox-container" style="width: 33.33%;" colspan="3">
+                                        <input type="checkbox" id="CheckboxText2">
+                                        <label for="CheckboxText2">
+                                          Rounded
+                                        </label>
+                                    </td> 
+                                </tr>
+                                <tr>
+                                    <td class="checkbox-container" style="width: 33.33%;" colspan="3">
+                                        <input type="checkbox" id="CheckboxText3">
+                                        <label for="CheckboxText3">
+                                          Circular
+                                        </label>
+                                    </td> 
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
 
                 <!--botones flotantes-->
