@@ -339,23 +339,53 @@ border-bottom: 1px solid #ccc;
   vertical-align: top;  
   background-color: #bacdd8;
   width: 27%;
-  height: 98%;
+  height: 105%;
   margin-left: 10%;
   margin-top: 22px;
   align-items: center;
 }
 
+.customization_panel{
+  display: flex;
+  justify-content: center;
+}
+
 .customization_panel table{
-  margin-top: 260px;
-  margin-left:23px;
-  margin-right:20px;
   border-radius: 20px;
   background-color: rgb(0, 0, 129);
   text-align: center;
   color: rgba(255, 255, 255, 0.801);
   font-size: smaller;
+  align-items: center;
+  padding: 10px;
 }
 
+.customization_panel table hr{
+  padding: 0px;
+}
+
+#rangeBar input[type="range"] {
+  width: 100px; /* Cambia aquí el tamaño de la barra de desplazamiento */
+}
+
+#recuadro input[type="text"] {
+  background-color: transparent; /* Establece el fondo del input text como transparente */
+  color: white;
+  width: 170px;
+}
+
+/* Oculta la caja del checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Estilos para la imagen del check */
+.checkbox-container input:checked + label::after {
+  content: '\2713'; /* Unicode del check */
+  color: #2196F3; /* Color del check cuando está seleccionado */
+}
 
 .foto-hombre{
   width: 200px;
