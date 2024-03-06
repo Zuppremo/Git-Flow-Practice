@@ -278,13 +278,13 @@ border-bottom: 1px solid #ccc;
   .info-General{
     display:inline-block;
     background-color: #dadce5;
-    width: 74.5%;
+    width: 110%;
     vertical-align: top;
   }
   .info-Curso{
     display:inline-block;
     background-color:#737686;
-    width: 100%;
+    width: 110%;
     height: 60%;
     padding: 0;
     margin-top: 7%;
@@ -368,14 +368,12 @@ border-bottom: 1px solid #ccc;
 
 /* botones flotantes */
 
-.botonFlot{
-  position: fixed;
-  background-color: #e8e4e4;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0px 4px 6px;
+#botonFlot {
+  
   bottom: 20px;
   right: 20px;
+  z-index: 999;
+  text-align: center;
 }
 #p1{
   bottom: 20px;
