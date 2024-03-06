@@ -365,34 +365,65 @@ border-bottom: 1px solid #ccc;
 .container-hombre{
   display: inline-block;
   vertical-align: top;  
-  background-color: #a2d3ef;
-  width: 27%;
-  height: 98%;
+  background-color: #bacdd8;
+  width: 24%;
+  height: 103%;
   margin-left: 10%;
   margin-top: 22px;
   align-items: center;
 }
 
 .man_photo{
-max-width:100%;
-height:auto;
-margin-top: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 70%;
+height: 70%;
+margin-top: 30px;
 border: 15px solid #c2e0e0;
-margin-left: 7px;
+margin-left: 55px;
+}
+.customization_panel{
+  display: flex;
+  justify-content: center;
 }
 
-/*contendor azul de editar foto del hombre*/
-.editar-foto{
-  position: flex;
-  background-color: #04054d;
-  width: 75%;
-  height: 45%;
-  vertical-align: middle;
-  border-radius: 20%;
-  margin-left: 13%;
-  margin-top: 5%;
+.customization_panel table{
+  border-radius: 20px;
+  background-color: rgb(0, 0, 129);
+  text-align: center;
+  color: rgba(255, 255, 255, 0.801);
+  font-size: smaller;
+  align-items: center;
+  padding: 10px;
 }
 
+.customization_panel table hr{
+  padding: 0px;
+}
+
+#rangeBar input[type="range"] {
+  width: 100px; /* Cambia aquí el tamaño de la barra de desplazamiento */
+}
+
+#recuadro input[type="text"] {
+  background-color: transparent; /* Establece el fondo del input text como transparente */
+  color: white;
+  width: 170px;
+}
+
+/* Oculta la caja del checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Estilos para la imagen del check */
+.checkbox-container input:checked + label::after {
+  content: '\2713'; /* Unicode del check */
+  color: #2196F3; /* Color del check cuando está seleccionado */
+}
 
 /* botones flotantes */
 
