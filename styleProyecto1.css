@@ -379,11 +379,14 @@ align-items: center;
 justify-content: center;
 width: 70%;
 height: 70%;
-margin-top: 30px;
+margin-top: 50px;
 border: 15px solid #c2e0e0;
-margin-left: 55px;
+margin-left: 35px;
+
 }
+
 .customization_panel{
+  padding-top: 20px;
   display: flex;
   justify-content: center;
 }
