@@ -62,20 +62,33 @@
             </select>
             <a href="#"><i class="fa-solid fa-caret-down"></i></a>
             <div class="imagenescurriculo">
-                <ul>
-                    <li>
-                        <img src="./imagenes/img1.png" width="158">
-                    </li>
-                    <li>
-                        <img src="./imagenes/img2.png" width="158">
-                    </li>
-                    <li>
-                        <img src="./imagenes/img3.png" width="158">
-                    </li>
-                    <li>
-                        <img src="./imagenes/img4.png" width="158">
-                    </li>
-                </ul>
+                
+                <select id="mySelect">
+                <option value="lynn">Meet Lynn</option>
+                <option value="sara">Sara Ramires</option>
+                <option value="mercedes">Mercedes Rosas</option>
+            
+                </select>
+	    <div id="content"></div>
+		<script>
+
+      		const select = document.getElementById("mySelect");
+      		const content = document.getElementById("content");
+
+      		select.addEventListener("change", () => {
+        	const selectedOption = select.value;
+        	if (selectedOption === "lynn") {
+         	 content.innerHTML = "<img src='imagenes/image_1.jpg' width='158' height: '200'> <p>Lynn ipsum dolor sit amet consectetur adipisicing elit. Eius dignissimos nobis id eum a, ea, ipsa ab corrupti libero doloremque adipisci! Unde quae numquam architecto sunt voluptatum distinctio aut ratione.</p>";
+        	} else if (selectedOption === "sara") {
+        	  content.innerHTML = "<img src='imagenes/image_2.jpg' width='158'> <p>Sara ipsum dolor sit amet consectetur adipisicing elit. Eius dignissimos nobis id eum a, ea, ipsa ab corrupti libero doloremque adipisci! Unde quae numquam architecto sunt voluptatum distinctio aut ratione.</p>";
+        	} else if (selectedOption === "mercedes") {
+        	  content.innerHTML = "<img src='imagenes/image_3.jpg' width='158'> <p><br>Andrea ipsum dolor sit amet consectetur adipisicing elit. Eius dignissimos nobis id eum a, ea, ipsa ab corrupti libero doloremque adipisci! Unde quae numquam architecto sunt voluptatum distinctio aut ratione.</p>";
+        	} else {
+         	 content.textContent = "";
+        	}
+      		});
+    		</script>
+            
             </div>
         </div>
         <section class="info-General"> <!-- Seccion del curso -->
