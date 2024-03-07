@@ -236,20 +236,32 @@ border-bottom: 1px solid #ccc;
   transform: translateY(-50%);
 }
 
-.imagenescurriculo ul{
-  position: relative;
-  left: 4.8%;
-  top: 25%;
-
+.imagenescurriculo{
+	font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
 }
 
-.imagenescurriculo li{
-  margin-bottom: 20px;
+#content {
+     margin-bottom: 20px;
+}
+#content p{
+     color: rgb(255, 254, 254);
+}
+#content img{
+     border-radius: 5px;
+     
 }
 
-.imagenescurriculo li img{
-  border-radius: 5px;
+.imagenescurriculo select{
+    margin: 20px;
 }
+
+.imagenescurriculo option {
+        padding: 5px;
+      }
+
+
 
 .column{
   font-size: 25px;
